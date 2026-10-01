@@ -181,6 +181,7 @@ function deco() {
   // 弾幕に当たったとき
   if (end) {
     noLoop();
+    noStroke();
     textSize(120);
     fill(255);
     text("Game Over", 160, 280);
@@ -201,6 +202,7 @@ function deco() {
 
   // タイトルテキスト
   if (!start) {
+    noStroke();
     textSize(120);
     fill(255);
     text("Collect Items!", width / 7.7, height / 3.5);
